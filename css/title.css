@@ -1,0 +1,158 @@
+#title {    
+  height: 100%;
+  /*! background-color: #ccc; */
+}
+#title .wrap {    
+  max-width: 100%;
+  margin: initial;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 250px;
+  position: relative;
+  overflow: hidden;
+  background-color: #0000004a;
+}
+#title .wrap .tMenu{ 
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+#title .wrap .tMenu + a{
+  font-size: 35px;
+  font-weight: 500;
+  transform: rotate(90deg);
+  right: -30px;
+  top: 132px;
+  z-index: 2;
+  transition: all 0.5s;
+  color: #222;
+  position: fixed;
+  letter-spacing: 1px;
+}
+#title .wrap .tMenu + a.contactMove{
+  font-size: 30px;
+  right: -40px;
+  color: #999;
+}
+#title .wrap .tMenu .gnb{  
+  display: flex;
+  gap: 20px;
+}
+#title .wrap .tMenu .gnb li{
+  
+}
+#title .wrap .tMenu .gnb li:nth-child(6){
+
+}
+#title .wrap .tMenu .gnb li a{  
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 15px;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#title .wrap .tMenu .gnb li a::after{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 3px;
+  transition: all 0.5s;  
+}
+#title .wrap .tMenu .gnb li a:hover::after{
+  width: 100%;
+}
+#title .slide {   
+  display: flex;
+}
+#title .slide li {
+  margin-top: 250px;
+  transition: all 0.3s;
+}
+#title .slide li::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0.7;
+  transition: all 1s;
+  background-position: center;
+}
+#title .slide li.currentSlide:nth-child(1)::before{
+  background-image: url(https://www.brandxcorp.com/web/upload/images/img_visual01.jpg);
+  opacity: 1; 
+}
+#title .slide li.currentSlide:nth-child(2)::before{
+  background-image: url(https://www.brandxcorp.com/web/upload/images/img_visual02.jpg);
+  opacity: 1;
+}
+#title .slide li.currentSlide:nth-child(3)::before{
+  background-image: url(https://www.brandxcorp.com/web/upload/images/img_visual03.jpg);
+  opacity: 1;
+}
+#title .slide li.currentSlide:nth-child(4)::before{
+  background-image: url(https://www.brandxcorp.com/web/upload/images/img_visual04.jpg);
+  opacity: 1;
+}
+#title .slide li video{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+  transform: scale(1.2);
+}
+.currentSlide h2{
+  color: #fff !important;
+  transform: scale(1.1);
+}
+.currentSlide h2:after{
+  content: "";
+  display: block;
+  width: 20px;
+  border-bottom: 1px solid #fff;
+  margin: 5px 0px;
+}
+#title li:not(.currentSlide) p{
+  display: none;
+}
+#title .slide li h2.p {    
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+#title .slide li p.h1 {    
+  position: absolute;
+  left: 250px;
+  margin-top: -260px;
+  /*! top: calc(40% - 25px); */
+  width: 463px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #fff;
+  transition: all 0.3s;
+}
+#title .control {
+    
+}
+#title .control a {
+    
+}
