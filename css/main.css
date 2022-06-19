@@ -1,0 +1,466 @@
+main {
+  /*! height: 500%; */
+}
+main section{
+}
+/* 1 ---------------------------------------- introduction ---------------------------------------- 1 */
+#introduction {
+  padding: 240px 0;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.bgeee{
+  background-color:#b16852;
+}
+#introduction .wrap {  
+  display: flex;
+  margin: initial;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 1230px;
+  /*! margin: 0 auto; */
+  width: 100%;
+}
+#introduction .wrap::before{
+  content: "";
+  display: block;
+  width: 615px;
+  width: 45%;
+  height: 2200px;
+  background-image: 
+    url(https://brandxcorp.com/web/upload/images/img_main01.jpg),
+    url(https://brandxcorp.com/web/upload/images/img_main02.jpg),
+    url(https://brandxcorp.com/web/upload/images/img_main03.jpg),
+    url(https://brandxcorp.com/web/upload/images/img_main04.jpg),
+    url(https://brandxcorp.com/web/upload/images/img_main05.jpg);
+  background-repeat: no-repeat;
+  background-size: 80%,50%,70%,60%,100%;
+  background-position-x: right,right,left,right,left;
+  background-position-y: 0px,450px,1050px,1310px,1730px;
+}
+#introduction .right{  
+  box-sizing: border-box;
+  height: 740px;
+  width: 700px;
+}
+.fixed{
+  position: fixed;
+  top: 50px !important;
+  right: 0;
+}
+.absolute{
+  position: absolute;
+  right: 0px;
+}
+#introduction .right hgroup {
+  
+}
+
+#introduction .right hgroup h2 {  
+  color: #ff581e;
+}
+
+#introduction .right hgroup h3 { 
+  margin: 30px 0;
+  font-size: 40px;
+}
+
+#introduction .right p.p {  
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 17px;
+  width: 481px;
+}
+
+#introduction .right p.p:nth-of-type(2)::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 236px;
+  margin-top: 50px;
+  background-image:
+    url(https://brandxcorp.com/web/upload/images/img_circle01.png),
+    url(https://brandxcorp.com/web/upload/images/img_circle02.png),
+    url(https://brandxcorp.com/web/upload/images/img_circle03.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position-x: 0,34%,68%;
+  background-position-y: center;
+}
+#introduction .right .more {  
+  color: #ff581e;
+  position: absolute;
+  bottom: 40px;
+  display: block;
+  padding: 15px 75px 15px 0;
+}
+#introduction .right .more::before {  
+  content: "";
+  display: block;
+  width: 25px;
+  border-bottom: 1px solid #ff581e;
+  transform: translateX(200px) translateY(32px) rotate(45deg);
+  transform-origin: 100% 100%;
+  transition: all 0.5s;
+}
+#introduction .right .more::after {  
+  content: "";
+  display: block;
+  border-top: 1px solid #ff581e;
+  width: 225px;
+  transform: translateY(15px);
+  transition: all 0.5s;
+}
+#introduction .right .more:hover::before{  
+  transform: translateX(235px) translateY(32px) rotate(45deg);
+}
+#introduction .right .more:hover::after{  
+  width: 260px;
+}
+/* 1 ---------------------------------------- introduction ---------------------------------------- 1end */
+/* 2 ---------------------------------------- news ---------------------------------------- 2 */
+#news{
+  width: 100%;
+  height: 700px;
+  transition: all 0.5s;
+}
+
+#news .wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+/*   margin-right: 0; */
+}
+
+#news h2.h4 {
+
+}
+
+#news article {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+#news article hgroup {
+  position: relative;
+  width: 300px;
+}
+#news article hgroup h3.h6 {
+  width: fit-content;
+  font-size: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#news article hgroup h3.h6::before{
+  content: "";
+  display: block;
+  font-size: 14px;
+  transform-origin: 0 100%;
+  transform: translateX(-20px) rotate(90deg);
+  color: #ff581e;
+  font-weight: 600;
+}
+#news article:nth-of-type(1) hgroup h3.h6::before{
+  content: "Brand X, News";
+}
+#news article:nth-of-type(2) hgroup h3.h6::before{
+  content: "Brand X, IR";
+}
+#news article:nth-of-type(3) hgroup h3.h6::before{
+  content: "Brand X, Caree";
+}
+#news article hgroup h3.h6 a{
+  display: block;
+  width: 100%;
+  height: 340px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#news article:nth-of-type(1) hgroup h3.h6 a{
+  background-image: url(https://brandxcorp.com/web/upload/category/editor/2022/04/06/f96d6b5a7cbeb0232ccfcff558dff1e2.jpg);
+}
+#news article:nth-of-type(2) hgroup h3.h6 a{
+  background-image: url(https://brandxcorp.com/web/upload/images/img_main08.jpg); 
+}
+#news article:nth-of-type(3) hgroup h3.h6 a{
+  background-image: url(https://brandxcorp.com/web/upload/images/img_main06.jpg);
+}
+#news article hgroup h4.h3 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.4;
+  width: 100%;
+  height: 100px;
+}
+
+#news article p.p {
+  font-size: 16px;
+  line-height: 1.6;
+  width: 300px;
+  font-weight: 400;
+  height: 170px;
+  text-align: justify;
+}
+
+#news article a.more {
+  display: block;
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid #000;
+  line-height: 40px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+#news article a.more:hover{
+  color: #fff;
+  background-color: #000;
+}
+/* 2 ---------------------------------------- news ---------------------------------------- 2end */
+/* 3 ---------------------------------------- brand ---------------------------------------- 3 */
+#brand {
+}
+
+#brand .wrap {
+
+  max-width: 100%;
+}
+
+#brand ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#brand ul li {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15vw;
+  position: relative;
+}
+
+#brand ul li:nth-of-type(1){
+  background-image: url(../img/brand1.jpg);
+}
+#brand ul li:nth-of-type(2){
+  background-image: url(../img/brand2.jpg);
+}
+#brand ul li:nth-of-type(3){
+  background-image: url(../img/brand3.jpg);
+}
+#brand ul li:nth-of-type(4){
+  background-image: url(../img/brand4.jpg);
+}
+#brand ul li:nth-of-type(5){
+  background-image: url(../img/brand5.jpg);
+}
+#brand ul li:nth-of-type(6){
+  background-image: url(../img/brand6.jpg);
+}
+#brand ul li:nth-of-type(7){
+  background-image: url(../img/brand7.jpg);
+}
+#brand ul li:nth-of-type(8){
+  background-image: url(../img/brand8.jpg);
+}
+#brand ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+#brand ul li a:hover {
+  background-color: #00000096;
+}
+#brand ul li a h3.h4 {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0px 30px 0 0;
+}
+
+#brand ul li a.over h3.white{
+  color: #fff;
+}
+#brand ul li a h3.white {
+  position: static;
+  margin-bottom: 20px; 
+  animation-name: up;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+@keyframes left{
+  0%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+#brand ul li a h3 img {
+  width: 130px;
+  height: 20px;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  transition: all 0.3s;
+}
+
+#brand ul li a h3.white img{
+  position: static;
+  transform: translateY(25px);
+}
+#brand ul li a h3.white::after{
+  content: "";
+  width: 20px;
+  height: 2px;
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: -40px;
+}
+#brand ul li a:hover h3::after{
+  animation-name: h2right;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  background-color: #fff;
+}
+@keyframes h2right{
+  0%{
+    left: -30px;
+    opacity: 0;
+  }
+  100%{
+    left: 110px;
+    opacity: 1;
+  }
+}
+#brand ul li a p.p {
+  color: #fff;
+  transition: all 0.3s;
+}
+#brand ul li a.over p.p {
+  animation-name: up;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+}
+@keyframes up{
+  0%{
+    opacity: 0; 
+    transform: translateY(200%);
+  }
+  100%{
+     opacity: 1;
+    transform: translateY(-60%);
+  }
+}
+
+#brand ul li p.detail {
+  color: #fff;
+  transform: translateY(10px);
+  transition: all 0.3s; 
+  color: transparent;
+}
+#brand ul li a:hover img:nth-of-type(2) {
+  transform: translateY(-40px);
+}
+#brand ul li a:hover p.detail {
+  transform: initial;
+  color: #fff;
+}
+#brand a.more{  
+  display: block;
+  width: 220px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(50% - 110px);
+  margin-top: 50px;
+  transition: all 0.3s;
+}
+
+#brand a.more:hover{
+  color: #fff;
+  background-color: #000;
+}
+/* 3 ---------------------------------------- brand ---------------------------------------- 3end */
+/* 4 ---------------------------------------- office ---------------------------------------- 4 */
+#office{
+  overflow: hidden;
+}
+ 
+#office .wrap{ 
+  width: 100%;
+  margin: 0;
+  padding-left: 10%;
+  max-width: 100%;
+}
+
+#office h2.h2{
+  font-size: 18px;
+  color: #ff581e;
+  letter-spacing: -1px;
+  transform: scaleY(0.8);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#office .officeslide li{ 
+
+}
+#office .swiper{
+
+}
+#office .swiper-wrapper{
+  
+}
+#office .swiper li{
+  width: 70%;
+}
+
+#office .swiper li img{
+  width: 100%;
+  transition: all 0.4s;
+}
+#office .swiper-wrapper {
+  margin-bottom: 40px;
+
+}
+#office .swiper-horizontal>.swiper-pagination-progressbar{
+ height: 1px !important;
+ left: 0;
+ top: 99% !important;;
+}
+
+:root {
+ --swiper-theme-color:#000 !important;
+}
+.progressive{
+  display: block;
+  border-top: 2px solid #999;
+  margin-top: 30px;
+  width: calc(100% - 180px);
+  transition: all 0.5s;
+}
+#office .slick-list{
+  padding: 0 100px 0 0 !important;
+}
+/* 4 ---------------------------------------- office ---------------------------------------- 4end */

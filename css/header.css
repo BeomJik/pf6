@@ -1,0 +1,201 @@
+.screen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 2;
+}
+body{
+  padding-left: 150px; 
+  height: 100%;
+  transition: all 0.3s;
+}
+
+header {
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+}
+header .wrap {
+  max-width: none;
+  margin: initial;
+  padding-top: 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+header .wrap::before{
+  content: "BrandX Corporation";
+  position: absolute;
+  bottom: 100px;
+  font-size: 12px;
+  width: 100%;
+  color: #aaa;
+  transform: rotate(90deg);
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+}
+header h1.h1 { 
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  transform: scaleY(0.9);
+  font-size: 0;
+}
+header h1.h1 a {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+header h1.h1 a img{
+  transition: all 0.3s;
+}
+
+header .gnb {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  left: -250px;
+  transition: all 0.5s;
+  opacity: 0;
+  position: fixed;
+}
+header .gnb.moveShow{
+  left: 150px; 
+  opacity: 1;
+}
+header .gnb>li {  
+  margin-bottom: 20px;
+}
+header .gnb li h2 {  
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+header .gnb li h2 a {
+  
+}
+header .gnb li .sub { 
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+header .gnb li:nth-child(2) .sub {
+  column-gap: 0;
+}
+header .gnb li .sub li {
+  width: fit-content;
+}
+header .gnb li:nth-child(2) .sub li {  
+  width: 50%;
+  margin-bottom: 10px;
+}
+header .gnb li .sub li a {  
+  font-size: 14px;
+  color: #a8a8a7;
+}
+header .enb {  
+  position: absolute;
+  top: 30px;
+  display: flex;
+  left: -250px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+header .enb.moveShow{
+  left: 160px;
+  opacity: 1;
+}
+header .enb li {
+  
+}
+header .enb li a {  
+  padding: 10px;
+  color: #a8a8a7;
+}
+header .enb li a.currentLang{
+  color: #000;
+}
+header .allmenu {  
+  display: block;
+  position: absolute;
+  left: calc(50% - 17px);
+  top: calc(50% - 20px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 30px;
+  font-size: 0;
+  transition: all 0.3s;
+  z-index: 1;
+}
+header .allmenu::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transform: translateY(7px);
+  transition: all 0.3s;
+}
+header .allmenu span{  
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: all 1s;
+}
+header .allmenu::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s;
+}
+header .allmenu.x::before{
+  transform: translateY(16.5px) rotate(-45deg);
+}
+header .allmenu.x span{  
+  transform: translateY(0px) translateX(-30px) ;
+  opacity: 0;
+}
+header .allmenu.x::after{
+  transform: translateY(-10.5px) rotate(45deg);
+}
+header .wrap::after{
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+::selection {
+  background-color: #f87306;
+	color: #fff;
+}

@@ -1,0 +1,175 @@
+#showimage {
+  position: fixed;
+  z-index: 1;
+  top: 5%;
+  left: 15%;
+  width: 520px;
+}
+#showimage::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
+}
+#showimage ul li{
+  
+}
+#showimage ul li.slidePop1{
+  width: 495px; 
+  height: 480px; 
+  background-color: #fff; 
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;  
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+#showimage ul li.slidePop1::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 8px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#showimage ul li a{
+  
+}
+
+#showimage ul li a img{
+  
+}
+/* #showimage ul li.slidePop1 div{
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#showimage ul li.slidePop1 div::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 8px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#showimage ul li.slidePop1 div:hover a.go::before{  
+  transform: translateX(195px) translateY(21px) rotate(35deg);
+}
+
+#showimage ul li.slidePop1 div:hover a.go::after{  
+   width: 200px;
+} */
+
+#showimage ul li.slidePop1 h2.h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  transform: scaleY(0.9);
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-left: 40px;
+  color: #000;
+}
+
+#showimage ul li.slidePop1 h2.h2::before{
+  content: "BrandX Corporation";
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  font-size: 12px;
+  width: 100%;
+  color: #aaa;
+  transform: rotate(90deg);
+  font-weight: 700;
+  text-align: center;
+  margin-left: 40px;
+}
+
+#showimage ul li.slidePop1 p.p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transform: scaleY(0.9);
+  margin-left: 40px;
+  display: block;
+  color: #000;
+}
+
+#showimage .slidePop1 a.go {
+  display: block;
+  width: 205px;
+  height: 30px;
+  font-size: 0;
+  margin-left: 20px;
+}
+
+#showimage .slidePop1 a.go::before {  
+  content: "";
+  display: block;
+  width: 25px;
+  border-bottom: 1px solid #000;
+  transform: translateX(145px) translateY(21px) rotate(35deg);
+  transform-origin: 100% 100%;
+  transition: all 0.3s;
+}
+
+#showimage .slidePop1 a.go::after {  
+  content: "";
+  display: block;
+  border-top: 1px solid #000;
+  width: 150px;
+  transform: translateX(20px) translateY(20px);
+  transition: all 0.3s;
+}
+
+#showimage .slidePop1:hover a.go::before{  
+  transform: translateX(195px) translateY(21px) rotate(35deg);
+}
+
+#showimage .slidePop1:hover a.go::after{  
+  width: 200px;
+}
+
+#showimage .wrapClose {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: 500;
+  padding: 20px;
+  position: absolute;
+  left: -20px;
+  bottom: -50px;
+  z-index: 1;
+}
+
+#showimage .wrapClose input {
+
+}
+
+#showimage .wrapClose input + span {
+  width: 85%;
+}
+
+#showimage .wrapClose a.btn_close {
+  text-align: right;
+  color: #fff;
+}
